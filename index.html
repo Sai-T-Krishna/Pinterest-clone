@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="icon" href="pinterest_logo_icon_147250.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+
+            <div class="logo">
+                <a href="https://in.pinterest.com/"><i class="fa-brands fa-pinterest" style="color: #df2626;"></i></a>
+            </div>
+
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Explore</a>
+                <a href="#">Create <i class="uil uil-angle-down"></i></a>
+            </div>
+
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass" style="color: #6d6d6f;"></i>
+                <input type="search" placeholder="Search...">
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-bell fa-shake" style="color: #6d6d6f;"></i>
+                <i class="fa-solid fa-comment-dots" style="color: #6d6d6f;"></i>
+                
+                <i class="fa-solid fa-user" style="color: #6d6d6f;"></i>
+                <i class="fa-solid fa-right-from-bracket" style="color: #6d6d6f;"></i>
+            </div>
+
+        </div>
+    </nav>
+
+        <div class="hero">
+            <div class="box"><img class="downloadable-image" src="pexels-ксения-капустина-8208115.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="image-1.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="image-2.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="pexels-ксения-капустина-8208115.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="image-4.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="pexels-enrico-perini-804605.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="image-5.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="image-6.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="pexels-nadi-lindsay-2672889.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="image-7.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="image-8.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="image-3.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="pexels-john-valette-8343897.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="image-9.jpg" loading="lazy" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="image-10.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="pexels-felix-mittermeier-1459505.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="pexels-vlada-karpovich-4823254.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="image-3.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="pexels-ксения-капустина-8208115.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="pexels-enrico-perini-804605.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="image-5.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="image-6.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="pexels-nadi-lindsay-2672889.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="image-7.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="image-8.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="image-3.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="pexels-felix-mittermeier-1459505.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image"src="pexels-vlada-karpovich-4823254.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="image-3.jpg" loading="lazy" alt=""></div>
+            <div class="box"><img class="downloadable-image" src="pexels-ксения-капустина-8208115.jpg" loading="lazy" alt=""></div>
+        
+            
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(".downloadable-image").on('click', function() {
+        var imageUrl = $(this).attr('src');
+        var link = document.createElement('a');
+        link.href = imageUrl;
+        link.download = 'downloaded-image.jpg';
+        link.click();
+    });
+});
+</script>
+
+</body>
+</html>
+
+

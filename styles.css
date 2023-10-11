@@ -1,0 +1,224 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: None;
+    border: None;
+}
+ body{
+    font-family: 'Poppins', sans-serif;
+    color: hsl(252, 30%, 17%);
+ 
+ }
+
+ .container{
+    width: 100%;
+ }
+
+ nav {
+    width: 100%;
+    background-color: hsl(252, 30%, 100%);
+    padding: 0.7rem 0;
+    top: 0;
+    z-index: 10;
+ }
+ nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .logo i{
+    font-size: 32px;
+    margin: 0;
+    margin-left: 20px;
+ }
+
+ .logo i:hover{
+    cursor: pointer;
+ }
+ .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px 0 5px;
+    font-size: 15px;
+    list-style: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    padding: 8px 10px; /* Add padding to create a bigger clickable area */
+    border-radius: 30px; /* Rounded corners for the links */
+}
+
+.links a:hover {
+    background-color: black;
+    color: white; /* Change text color on hover for better visibility */
+}
+
+/* Style for the icons container */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Style for the icons */
+.icons i {
+    font-size: 22px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    padding: 8px; /* Add padding to create a bigger clickable area */
+    
+    border-radius: 50%; /* Rounded corners for the icons */
+}
+
+/* Hover effect for icons */
+.icons i:hover {
+    cursor: pointer;
+    background-color: lightgrey; /* Light grey background */
+}
+ .search-bar{
+    background-color: hsl(240, 2%, 87%);
+    border-radius: 2rem;
+    padding: 0.8rem;
+ }
+
+ .search-bar input[type='search']{
+    background: transparent;
+    width: 55vw;
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    color: hsl(252,  30%, 17%);
+ }
+
+ nav .button{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+ }
+
+ .hero{
+   width: 1400px;
+   margin: 20px auto;
+   columns: 5;
+   column-gap: 20px;
+ }
+ .hero .box{
+   width: 100%;
+   margin-bottom: 10px;
+   break-inside: avoid;
+ }
+
+ .hero .box img{
+   max-width: 100%;
+   border-radius: 15px;
+ }
+
+ .box {
+   position: relative;
+   overflow: hidden;
+   transition: transform 0.2s;
+   border-radius: 15px;
+   cursor: pointer;
+}
+
+/* Scale the image on hover */
+.box:hover {
+   transform: scale(1.0);
+   border-radius: 15px;
+
+}
+
+/* Add a transition effect to the image inside */
+.box img {
+   transition: transform 0.2s;
+}
+
+/* Scale the image on hover */
+.box:hover img {
+   transform: scale(1.1);
+}
+@media screen and (max-width: 1400px) {
+   .links i{
+      display: none;
+   }
+   .search-bar {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 0 10px; /* Adjust margin for spacing */
+   }
+
+   .search-bar{
+      width: 80%;
+   }
+
+   .search-bar input[type='search'] {
+       width: 90%; /* Adjust the input width as needed */
+   }
+
+   .icons {
+       margin-right: 10px; /* Adjust the margin for the icons container */
+   }
+
+   .logo i {
+       font-size: 24px; /* Adjust logo size */
+   }
+   .hero{
+      width: calc(100% - 40px);
+      columns: 4;
+   }
+
+}
+ /* For screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+   .links {
+       display: none;
+   }
+
+   .search-bar {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 0 10px; /* Adjust margin for spacing */
+   }
+
+   .search-bar input[type='search'] {
+       width: 70%; /* Adjust the input width as needed */
+   }
+
+   .icons {
+       margin-right: 10px; /* Adjust the margin for the icons container */
+   }
+
+   .logo i {
+       font-size: 24px; /* Adjust logo size */
+   }
+
+   .hero{
+     
+      columns: 3;
+   }
+
+}
+
+/* For screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+   .search-bar input[type='search'] {
+       width: 80%; /* Adjust the input width as needed */
+   }
+   .hero{
+     
+      columns: 1;
+   }
+}
